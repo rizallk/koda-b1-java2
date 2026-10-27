@@ -8,11 +8,11 @@ public class PermanentEmployee extends Employee {
 
   @Override
   public void increaseSalary(int amount) {
+    System.out.println("Salary Increase : Rp " + amount);
     if (amount <= 0) {
       System.out.println("Error : Kenaikan gaji harus lebih dari 0");
     } else {
       salary += amount;
-      System.out.println("Salary Increase : Rp " + amount);
     }
   }
 }

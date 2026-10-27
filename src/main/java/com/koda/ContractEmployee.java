@@ -7,6 +7,7 @@ public class ContractEmployee extends Employee {
 
   @Override
   public void increaseSalary(int amount) {
+    System.out.println("Salary Increase : Rp " + amount);
     if (amount <= 0) {
       System.out.println("Error : Kenaikan gaji harus lebih dari 0");
       return;
@@ -16,6 +17,5 @@ public class ContractEmployee extends Employee {
       return;
     }
     salary += amount;
-    System.out.println("Salary Increase : Rp " + amount);
   }
 }
