@@ -33,10 +33,19 @@ public class App {
         contractEmpService.giveRaise(300000);
         contractEmpService.showEmployeeCurrentSalary();
         System.out.println();
-        contractEmpService.giveRaise(1000000);
+        try {
+            contractEmpService.giveRaise(1000000);
+        } catch (Exception e) {
+            System.out.println("Gagal : " + e.getMessage());
+        }
         contractEmpService.showEmployeeCurrentSalary();
         System.out.println();
-        contractEmpService.giveRaise(-500000);
+        try {
+
+            contractEmpService.giveRaise(-500000);
+        } catch (Exception e) {
+            System.out.println("Gagal : " + e.getMessage());
+        }
         contractEmpService.showEmployeeCurrentSalary();
         System.out.println();
 

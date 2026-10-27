@@ -1,7 +1,5 @@
 package com.koda;
 
-import com.koda.Employee;
-
 public class EmployeeService {
   public Employee employee;
 
